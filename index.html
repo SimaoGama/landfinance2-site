@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LANDFINANCE2</title>
+  <title>LANDFINANCE 2 - Gestão de Empresas</title>
   <meta
     name="description"
     content="Soluções de contabilidade e gestão para a sua empresa."
@@ -11,31 +14,178 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="logo">LANDFINANCE2</div>
-      <nav class="nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contactos">Contactos</a>
-      </nav>
+  <aside class="side-nav">
+    <a href="#hero" class="nav-dot active" data-section="hero">
+      <span>Início</span>
+    </a>
+    <a href="#servicos" class="nav-dot" data-section="servicos">
+      <span>Serviços</span>
+    </a>
+    <a href="#sobre" class="nav-dot" data-section="sobre">
+      <span>Sobre</span>
+    </a>
+    <a href="#contactos" class="nav-dot" data-section="contactos">
+      <span>Contactos</span>
+    </a>
+  </aside>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div>
+        <p class="brand-kicker">Universo Landfinance</p>
+        <div class="brand">LANDFINANCE 2</div>
+      </div>
+      <div class="topbar-actions">
+  <button class="theme-toggle" id="theme-toggle" aria-label="Ativar modo escuro">
+    <span class="theme-icon">◐</span>
+  </button>
+  <a href="#contactos" class="btn btn-outline">Fale connosco</a>
+</div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Universo Landfinance</p>
-        <h1>Soluções de contabilidade e gestão para a sua empresa</h1>
-        <p class="hero-text">
-          A Landfinance2 Gestão de Empresas, Lda. está vocacionada para a
-          prestação de serviços na área da contabilidade, fiscalidade e
-          consultadoria, em regime de outsourcing.
-        </p>
-        <a class="btn" href="#contactos">Fale connosco</a>
+    <section id="hero" class="panel hero reveal">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Gestão empresarial com proximidade e rigor</p>
+          <h1>Soluções de contabilidade e gestão para a sua empresa</h1>
+          <p class="lead">
+            A Landfinance2 Gestão de Empresas, Lda. está vocacionada para a
+            prestação de serviços na área da contabilidade, fiscalidade e
+            consultadoria, em regime de outsourcing.
+          </p>
+          <div class="hero-actions">
+            <a href="#contactos" class="btn">Pedir contacto</a>
+            <a href="#servicos" class="btn btn-secondary">Ver serviços</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <p class="mini-label">Principais áreas</p>
+          <ul>
+            <li>Contabilidade</li>
+            <li>Fiscalidade</li>
+            <li>Consultadoria e Gestão Financeira</li>
+            <li>Gestão de Recursos Humanos</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section id="sobre" class="section">
+    <section id="servicos" class="panel panel-light reveal">
       <div class="container">
-        <h2>Sobre a LANDFINANCE2</h2>
+        <div class="section-heading">
+          <p class="eyebrow">Serviços</p>
+          <h2>Apoio técnico e estratégico para empresas</h2>
+          <p>
+            Prestamos serviços especializados nas áreas essenciais à gestão e
+            administração empresarial, com foco em acompanhamento contínuo e
+            soluções práticas.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Contabilidade</h3>
+            <p>
+              Organização contabilística e acompanhamento regular para apoiar a
+              leitura clara da situação da empresa.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Fiscalidade</h3>
+            <p>
+              Enquadramento e acompanhamento fiscal com atenção ao cumprimento
+              das obrigações e à correta gestão tributária.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Consultadoria e Gestão Financeira</h3>
+            <p>
+              Apoio à tomada de decisão, planeamento e análise financeira com
+              uma perspetiva prática e orientada para resultados.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Gestão de Recursos Humanos</h3>
+            <p>
+              Suporte administrativo e operacional em processos ligados à gestão
+              de pessoas e rotinas empresariais.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="panel reveal">
+      <div class="container split-section">
+        <div class="section-heading">
+          <p class="eyebrow">Sobre nós</p>
+          <h2>Uma abordagem próxima, profissional e orientada para a gestão</h2>
+        </div>
+
+        <div class="text-block">
+          <p>
+            A LANDFINANCE2 Gestão de Empresas, Lda. está vocacionada para a
+            prestação de serviços na área da contabilidade, fiscalidade e
+            consultadoria, em regime de outsourcing.
+          </p>
+          <p>
+            Complementarmente, dispomos de uma gama mais alargada de serviços
+            diretamente ligados à gestão e administração de empresas.
+          </p>
+          <p>
+            Trabalhamos com foco na confiança, no acompanhamento e na criação de
+            soluções ajustadas às necessidades de cada cliente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactos" class="panel panel-accent reveal">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow eyebrow-light">Contactos</p>
+          <h2>Fale connosco</h2>
+          <p class="contact-intro">
+            Estamos disponíveis para esclarecer questões e apresentar soluções
+            ajustadas à realidade da sua empresa.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <p><strong>Email:</strong> geral.landfinance@gmail.pt</p>
+          <p><strong>Telefone:</strong> +351 000 000 000</p>
+          <p><strong>Morada:</strong> Lisboa, Portugal</p>
+
+          <div class="social-links">
+  <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9a3.7 3.7 0 0 0 3.7 3.7h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7h-9Zm9.7 1.1a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z"/>
+    </svg>
+  </a>
+
+  <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M13.5 22v-8h2.7l.4-3.1h-3.1V9c0-.9.2-1.5 1.6-1.5h1.7V4.7c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.6v1.7H7.2V14h2.6v8h3.7Z"/>
+    </svg>
+  </a>
+
+  <a href="https://linkedin.com/company/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn">
+    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M6.5 8.6H3.7V21h2.8V8.6Zm-1.4-1.7a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2ZM20.3 21h-2.8v-6.4c0-1.5-.5-2.5-1.8-2.5-1 0-1.6.7-1.9 1.3-.1.2-.1.6-.1 1V21h-2.8V8.6h2.8v1.7c.4-.8 1.3-2 3.3-2 2.4 0 4.3 1.5 4.3 4.8V21h0Z"/>
+    </svg>
+  </a>
+</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
